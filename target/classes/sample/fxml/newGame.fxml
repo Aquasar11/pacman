@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #1E2D4B;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.newGame">
+    <children>
+        <Button layoutX="328.8" layoutY="324.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0"
+                prefWidth="71.0" style="-fx-background-color: #82FFFF;" text="START" AnchorPane.bottomAnchor="55.0"
+                AnchorPane.rightAnchor="200.0"/>
+        <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="176.0" layoutY="44.0" pickOnBounds="true"
+                   AnchorPane.leftAnchor="200.0">
+            <image>
+                <Image url="@../../assets/images/heartForMenu.jpg"/>
+            </image>
+        </ImageView>
+        <Button layoutX="42.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#decreaseHearts"
+                style="-fx-background-color: red;" text="DECREASE" textFill="WHITE" AnchorPane.leftAnchor="50.0"/>
+        <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="112.0" layoutY="44.0" pickOnBounds="true"
+                   AnchorPane.leftAnchor="130.0">
+            <image>
+                <Image url="@../../assets/images/heartForMenu.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="thirdHeart" fitHeight="41.0" fitWidth="57.0" layoutX="272.0" layoutY="44.0"
+                   pickOnBounds="true" AnchorPane.leftAnchor="271.4" AnchorPane.rightAnchor="271.0">
+            <image>
+                <Image url="@../../assets/images/heartForMenu.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="fifthHeart" fitHeight="41.0" fitWidth="57.0" layoutX="414.0" layoutY="44.0"
+                   pickOnBounds="true" AnchorPane.rightAnchor="130.0">
+            <image>
+                <Image url="@../../assets/images/heartForMenu.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="fourthHeart" fitHeight="41.0" fitWidth="57.0" layoutX="354.0" layoutY="44.0"
+                   pickOnBounds="true" AnchorPane.rightAnchor="200.0">
+            <image>
+                <Image url="@../../assets/images/heartForMenu.jpg"/>
+            </image>
+        </ImageView>
+        <Button layoutX="485.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#increaseHearts"
+                prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: green;" text="INCREASE" textFill="WHITE"
+                AnchorPane.rightAnchor="50.0"/>
+        <GridPane fx:id="mapGrid" layoutX="194.0" layoutY="95.0" prefHeight="210.0" prefWidth="210.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="96.79998779296875"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="103.20001220703125"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+        </GridPane>
+        <Button layoutX="133.0" layoutY="334.0" mnemonicParsing="false" onAction="#newMap"
+                style="-fx-background-color: #82FFFF;" text="NEW MAP" AnchorPane.bottomAnchor="55.0"
+                AnchorPane.leftAnchor="200.0"/>
+        <ImageView fitHeight="107.0" fitWidth="144.0" layoutX="32.0" layoutY="147.0" nodeOrientation="RIGHT_TO_LEFT"
+                   pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0">
+            <image>
+                <Image url="@../../assets/images/redghost.gif"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="107.0" fitWidth="144.0" layoutX="452.0" layoutY="147.0" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.rightAnchor="35.0">
+            <image>
+                <Image url="@../../assets/images/redghost.gif"/>
+            </image>
+        </ImageView>
+        <Button layoutX="277.0" layoutY="360.0" mnemonicParsing="false" onAction="#back"
+                style="-fx-background-color: black;" text="BACK" textFill="WHITE"/>
+    </children>
+</AnchorPane>

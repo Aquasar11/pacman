@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.LoginView">
+    <top>
+        <AnchorPane prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #FFF300;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="muteButton" layoutY="13.0" mnemonicParsing="false" onAction="#muteCommand" prefHeight="34.0" prefWidth="61.0" text="Mute" />
+                <Label layoutX="211.0" layoutY="4.0" text="LOGIN MENU" textFill="RED" AnchorPane.leftAnchor="211.0">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #FFF300;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="300.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginCommand" prefHeight="37.0" prefWidth="133.0" text="Login" AnchorPane.rightAnchor="150.0" />
+                <Button layoutX="143.0" layoutY="247.0" mnemonicParsing="false" onAction="#backCommand" prefHeight="37.0" prefWidth="133.0" text="Back" AnchorPane.leftAnchor="150.0" />
+                <Label layoutX="143.0" layoutY="62.0" prefHeight="30.0" prefWidth="89.0" text="Username" AnchorPane.leftAnchor="170.0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="113.0" layoutY="121.0" prefHeight="42.0" prefWidth="126.0" />
+                <Label fx:id="loginMessageField" alignment="CENTER" layoutX="153.0" layoutY="170.0" prefHeight="64.0" prefWidth="300.0" textFill="BLUE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" layoutX="283.0" layoutY="128.0" promptText="password..." AnchorPane.rightAnchor="150.0" />
+                <TextField fx:id="usernameField" layoutX="283.0" layoutY="65.0" promptText="usrname..." AnchorPane.rightAnchor="150.0" />
+                <Label layoutX="143.0" layoutY="126.0" prefHeight="30.0" prefWidth="89.0" text="Password" AnchorPane.leftAnchor="170.0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

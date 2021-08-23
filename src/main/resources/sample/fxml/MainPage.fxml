@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #01e5ff;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.view.MainPageView">
+    <children>
+        <Button fx:id="muteButton" mnemonicParsing="false" onAction="#muteCommand" prefHeight="34.0" prefWidth="61.0"
+                text="Mute"/>
+        <Button layoutX="225.0" layoutY="186.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="26.0"
+                prefWidth="150.0" text="START" AnchorPane.bottomAnchor="190.0"/>
+        <Button layoutX="225.0" layoutY="234.0" mnemonicParsing="false" onAction="#showScoreBoard" prefHeight="26.0"
+                prefWidth="150.0" text="SCORE BOARD" AnchorPane.bottomAnchor="140.0"/>
+        <Button layoutX="224.0" layoutY="334.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0"
+                prefWidth="150.0" text="LOGOUT" AnchorPane.bottomAnchor="40.0"/>
+        <Button layoutX="225.0" layoutY="284.0" mnemonicParsing="false" onAction="#accountSetting" prefHeight="26.0"
+                prefWidth="150.0" text="ACCOUNT" AnchorPane.bottomAnchor="90.0"/>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../assets/images/redghost.gif"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="103.0" fitWidth="177.0" layoutX="409.0" layoutY="126.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../assets/images/cloud.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="103.0" fitWidth="177.0" layoutX="31.0" layoutY="234.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../assets/images/cloud.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
